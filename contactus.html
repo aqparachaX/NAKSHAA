@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - NAKSHA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f8f8f8;
+      color: #222;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: grid;
+      gap: 20px;
+    }
+
+    input, textarea, select {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #000;
+      box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: black;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+
+    .contact-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .contact-card {
+      flex: 1 1 250px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fafafa;
+      border: 1px solid #e5e5e5;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .contact-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Contact Us - NAKSHA</header>
+
+  <div class="container">
+    <h2>We'd love to hear from you</h2>
+    <p>Whether you have a question, concern, or just want to say hi — our team is here for you.</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <select required>
+        <option value="" disabled selected>Reason for Contact</option>
+        <option>Order Issue</option>
+        <option>Product Inquiry</option>
+        <option>Collaboration</option>
+        <option>Other</option>
+      </select>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-options">
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>support@naksha.com</p>
+      </div>
+      <div class="contact-card">
+        <h3>Instagram</h3>
+        <p>@naksha.official</p>
+      </div>
+      <div class="contact-card">
+        <h3>Call Us</h3>
+        <p>+92 123 456 7890<br><small>(Mon–Fri, 10AM–6PM)</small></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 NAKSHA. All rights reserved.
+  </footer>
+
+</body>
+</html>

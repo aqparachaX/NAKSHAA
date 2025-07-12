@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - NAKSHA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    .about-wrapper {
+      background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+      padding: 80px 20px 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .about-card {
+      max-width: 900px;
+      background-color: white;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .about-title {
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 30px;
+      text-align: center;
+      color: #111;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .about-title::after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 80px;
+      background-color: #000;
+      margin: 15px auto 0;
+    }
+
+    .about-content {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.9;
+      color: #333;
+      text-align: justify;
+    }
+
+    .highlight {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #666;
+      margin: 25px 0;
+      padding-left: 20px;
+      border-left: 4px solid #ddd;
+    }
+
+    .founder-sign {
+      text-align: right;
+      margin-top: 40px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .about-card {
+        padding: 30px 20px;
+      }
+
+      .about-title {
+        font-size: 30px;
+      }
+
+      .about-content {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="about-wrapper">
+    <div class="about-card">
+      <h1 class="about-title">About Us</h1>
+      <div class="about-content">
+        <p>
+          Hey, I'm <span class="highlight">Abdul Qayyum</span>, a 17-year-old student and the founder of <strong>NAKSHA</strong>.
+        </p>
+        <p>
+          I’m currently in college, juggling classes during the day and working on NAKSHA by night. It’s not easy — but building something meaningful never is. What started as a side project soon turned into a vision: to create clean, minimal, and wearable designs that resonate with youth around the world.
+        </p>
+        <p class="quote">
+          “I don’t have a team or a fancy budget — I just have passion, persistence, and a purpose.”
+        </p>
+        <p>
+          NAKSHA reflects my journey as a young entrepreneur — raw, real, and relentless. Each product is carefully selected, each design thoughtfully curated. I believe in creating something original, something that people like me would actually wear.
+        </p>
+        <p>
+          Whether you're here to shop or just see what I’m building — thank you for being part of it. Your support means more than you know.
+        </p>
+        <p class="founder-sign">
+          — Abdul Qayyum, Founder of NAKSHA
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
